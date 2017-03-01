@@ -36,3 +36,39 @@ RewardPoints DECIMAL(5,1) NOT NULL,
 CONSTRAINT customer_PK
        PRIMARY KEY (customerID)
 );
+
+CREATE TABLE Reservation(
+
+);
+
+CREATE TABLE Room(
+
+);
+
+CREATE TABLE Employee(
+
+);
+
+CREATE TABLE Cleaning(
+
+);
+
+CREATE TABLE Manager(
+
+);
+
+CREATE TABLE Clerk(
+
+);
+
+CREATE TABLE Housekeeper(
+
+);
+
+CREATE TABLE Dependent(
+
+);
+
+CREATE TABLE Reward(
+
+);
