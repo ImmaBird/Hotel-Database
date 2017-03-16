@@ -54,15 +54,21 @@ CREATE TABLE Cleaning(
 );
 
 CREATE TABLE Manager(
-
+Salary	 varchar(9) NOT NULL,
+ManagerID	 CHAR(8) NOT NULL,
+CONSTRAINT manager_FK FOREIGN KEY(ManagerID) REFERENCES Employee(EmployeeID)
 );
 
 CREATE TABLE Clerk(
-
+HourlyRate     varchar(8) NOT NULL,
+ClerkID          CHAR(8) NOT NULL,
+CONSTRAINT clerk_FK FOREIGN KEY(ClerkID) REFERENCES Employee(EmployeeID)
 );
 
 CREATE TABLE Housekeeper(
-
+HourlyRate          varchar(8) NOT NULL,
+HouseKeeperID  CHAR(8) NOT NULL,
+CONSTRAINT housekeeper_FK FOREIGN KEY(HouseKeeperID) REFERENCES Employee(EmployeeID)
 );
 
 CREATE TABLE Dependent(
