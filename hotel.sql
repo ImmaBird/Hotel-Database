@@ -50,7 +50,15 @@ CREATE TABLE Employee(
 );
 
 CREATE TABLE Cleaning(
-
+HouseKeeperID     CHAR(8) NOT NULL,
+RoomNumber         varchar(3) NOT NULL,
+HotelID	             CHAR(5) NOT NULL,
+Date	            DATE NOT NULL,
+CONSTRAINT cleaning_PK PRIMARY KEY(HouseKeeperID, RoomNumber, HotelID),
+CONSTRAINT cleaning_FK FOREIGN KEY(HouseKeeperID) REFERENCES Housekeeper(HouseKeeperID),
+CONSTRAINT cleaning_FK FOREIGN KEY(RoomNumber) REFERENCES Room(RoomNumber),
+CONSTRAINT cleaning_FK FOREIGN KEY(HotelID) REFERENCES Hotel(HotelID),
+CONSTRAINT cleaning_PK PRIMARY KEY(Date)
 );
 
 CREATE TABLE Manager(
@@ -76,5 +84,10 @@ CREATE TABLE Dependent(
 );
 
 CREATE TABLE Reward(
-
+RewardID     CHAR(8) NOT NULL,
+CustomerID   CHAR(8) NOT NULL,
+Description     varchar(15) NOT NULL,
+PointValue      int(5) NOT NULL,
+CONSTRAINT reward_PK PRIMARY KEY(RewardID),
+CONSTRAINT reward_FK FOREIGN KEY(CustomerID) REFERENCES Customer(CustomerID)
 );
