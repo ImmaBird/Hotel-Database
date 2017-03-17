@@ -46,7 +46,19 @@ CREATE TABLE Room(
 );
 
 CREATE TABLE Employee(
-
+employeeID CHAR(8) NOT NULL,
+hotelID CHAR(8) NOT NULL,
+Name varchar(20) NOT NULL,
+DOB DATE NOT NULL,
+street varchar(25) NOT NULL,
+city varchar(15) NOT NULL,
+state CHAR(2) NOT NULL,
+ZipCode varchar(8) NOT NULL,
+telephone varchar(13) NOT NULL,
+CONSTRAINT employee_pk
+	PRIMARY KEY (employeeID),
+CONSTRAINT employee_fk
+	FOREIGN KEY (hotelID) REFERENCES Hotel(hotelID)
 );
 
 CREATE TABLE Cleaning(
@@ -72,7 +84,19 @@ CONSTRAINT housekeeper_FK FOREIGN KEY(HouseKeeperID) REFERENCES Employee(Employe
 );
 
 CREATE TABLE Dependent(
-
+DependentID CHAR(8) NOT NULL,
+EmployeeID CHAR(8) NOT NULL,
+Name varchar(20) NOT NULL,
+Relationship varchar(15) NOT NULL,
+street varchar(25) NOT NULL,
+city varchar(15) NOT NULL,
+state CHAR(2) NOT NULl,
+ZipCode varchar(8) NOT NULL,
+Telephone varchar(13) NOT NULL,
+CONSTRAINT dependent_pk
+	PRIMARY KEY (DependentID, EmployeeID),
+CONSTRAINT dependent_fk
+	FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID)
 );
 
 CREATE TABLE Reward(
