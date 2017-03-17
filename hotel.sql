@@ -11,18 +11,17 @@ Drop table if exists Customer;
 Drop table if exists Hotel;
 
 CREATE TABLE Hotel (
-hotelID   CHAR(5) NOT NULL,
+HotelID   CHAR(5) NOT NULL,
 Street    varchar(25) NOT NULL,
 city      varchar(15) NOT NULL,
 State     CHAR(2) NOT NULL,
 ZipCode   varchar(8) NOT NULL,
 Telephone varchar(13) NOT NULL,
-CONSTRAINT hotel_PK
-       PRIMARY KEY (hotelID)
+CONSTRAINT hotel_PK PRIMARY KEY (hotelID)
 );
 
 CREATE TABLE Customer (
-customerID   CHAR(8) NOT NULL,
+CustomerID   CHAR(8) NOT NULL,
 Name         varchar(20) NOT NULL,
 Street       varchar(25) NOT NULL,
 city         varchar(15) NOT NULL,
@@ -32,17 +31,32 @@ Telephone    varchar(13) NOT NULL,
 CCNumber     varchar(19) NOT NULL,
 CCExp	     varchar(5) NOT NULL,
 CCSecCode    varchar(4) NOT NULL,
-RewardPoints DECIMAL(5,1) NOT NULL,
-CONSTRAINT customer_PK
-       PRIMARY KEY (customerID)
+RewardPoints Int(5) NOT NULL,
+CONSTRAINT customer_PK PRIMARY KEY (customerID)
 );
 
 CREATE TABLE Reservation(
-
+ReservationID CHAR(8)    NOT NULL,
+CustomerID    CHAR(8)    NOT NULL,
+HotelID       CHAR(5)    NOT NULL,
+RoomNumber    varchar(3) NOT NULL,
+DateReserved  Date()     NOT NULL,
+StartDate     Date()     NOT NULL,
+EndDate       Date()     NOT NULL,
+CONSTRAINT reservation_PK PRIMARY KEY(ReservationID),
+CONSTRAINT cust_FK FOREIGN KEY(CustomerID) REFERENCES Customer(CustomerID),
+CONSTRAINT hotel_FK FOREIGN KEY(HotelID) REFERENCES Hotel(HotelID),
+CONSTRAINT room_FK FOREIGN KEY(RoomNumber) REFERENCES Room(RoomNumber)
 );
 
 CREATE TABLE Room(
-
+RoomNumber   varchar(3)   NOT NULL,
+HotelID      CHAR(5)      NOT NULL,
+MaxOccupancy Int(2)       NOT NULL,
+Beds         Int(2)       NOT NULL,
+Price        DECIMAL(4,2) NOT NULL,
+CONSTRAINT Room_PK PRIMARY KEY(RoomNumber),
+CONSTRAINT Hotel_FK FOREIGN KEY(HotelID) REFERENCES Hotel(HotelID)
 );
 
 CREATE TABLE Employee(
