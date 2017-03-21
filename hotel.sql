@@ -1,12 +1,12 @@
 Drop table if exists Reward;
 Drop table if exists Dependent;
+Drop table if exists Cleaning;
 Drop table if exists Housekeeper;
 Drop table if exists Clerk;
 Drop table if exists Manager;
-Drop table if exists Cleaning;
 Drop table if exists Employee;
-Drop table if exists Room;
 Drop table if exists Reservation;
+Drop table if exists Room;
 Drop table if exists Customer;
 Drop table if exists Hotel;
 
@@ -35,20 +35,6 @@ RewardPoints Int(5) NOT NULL,
 CONSTRAINT customer_PK PRIMARY KEY (customerID)
 );
 
-CREATE TABLE Reservation(
-ReservationID CHAR(8)    NOT NULL,
-CustomerID    CHAR(8)    NOT NULL,
-HotelID       CHAR(5)    NOT NULL,
-RoomNumber    varchar(3) NOT NULL,
-DateReserved  Date()     NOT NULL,
-StartDate     Date()     NOT NULL,
-EndDate       Date()     NOT NULL,
-CONSTRAINT reservation_PK PRIMARY KEY(ReservationID),
-CONSTRAINT cust_FK FOREIGN KEY(CustomerID) REFERENCES Customer(CustomerID),
-CONSTRAINT hotel_FK FOREIGN KEY(HotelID) REFERENCES Hotel(HotelID),
-CONSTRAINT room_FK FOREIGN KEY(RoomNumber) REFERENCES Room(RoomNumber)
-);
-
 CREATE TABLE Room(
 RoomNumber   varchar(3)   NOT NULL,
 HotelID      CHAR(5)      NOT NULL,
@@ -57,6 +43,20 @@ Beds         Int(2)       NOT NULL,
 Price        DECIMAL(4,2) NOT NULL,
 CONSTRAINT Room_PK PRIMARY KEY(RoomNumber),
 CONSTRAINT Hotel_FK FOREIGN KEY(HotelID) REFERENCES Hotel(HotelID)
+);
+
+CREATE TABLE Reservation(
+ReservationID CHAR(8)    NOT NULL,
+CustomerID    CHAR(8)    NOT NULL,
+HotelID       CHAR(5)    NOT NULL,
+RoomNumber    varchar(3) NOT NULL,
+DateReserved  Date     NOT NULL,
+StartDate     Date     NOT NULL,
+EndDate       Date     NOT NULL,
+CONSTRAINT reservation_PK PRIMARY KEY(ReservationID),
+CONSTRAINT res_cust_FK FOREIGN KEY(CustomerID) REFERENCES Customer(CustomerID),
+CONSTRAINT res_hotel_FK FOREIGN KEY(HotelID) REFERENCES Hotel(HotelID),
+CONSTRAINT res_room_FK FOREIGN KEY(RoomNumber) REFERENCES Room(RoomNumber)
 );
 
 CREATE TABLE Employee(
@@ -75,16 +75,21 @@ CONSTRAINT employee_fk
 	FOREIGN KEY (hotelID) REFERENCES Hotel(hotelID)
 );
 
+CREATE TABLE Housekeeper(
+HourlyRate          varchar(8) NOT NULL,
+HouseKeeperID  CHAR(8) NOT NULL,
+CONSTRAINT housekeeper_FK FOREIGN KEY(HouseKeeperID) REFERENCES Employee(EmployeeID)
+);
+
 CREATE TABLE Cleaning(
 HouseKeeperID     CHAR(8) NOT NULL,
 RoomNumber         varchar(3) NOT NULL,
 HotelID	             CHAR(5) NOT NULL,
 Date	            DATE NOT NULL,
-CONSTRAINT cleaning_PK PRIMARY KEY(HouseKeeperID, RoomNumber, HotelID),
-CONSTRAINT cleaning_FK FOREIGN KEY(HouseKeeperID) REFERENCES Housekeeper(HouseKeeperID),
-CONSTRAINT cleaning_FK FOREIGN KEY(RoomNumber) REFERENCES Room(RoomNumber),
-CONSTRAINT cleaning_FK FOREIGN KEY(HotelID) REFERENCES Hotel(HotelID),
-CONSTRAINT cleaning_PK PRIMARY KEY(Date)
+CONSTRAINT cleaning_PK PRIMARY KEY(HouseKeeperID, RoomNumber, HotelID, Date),
+CONSTRAINT cleaning_house_FK FOREIGN KEY(HouseKeeperID) REFERENCES Housekeeper(HouseKeeperID),
+CONSTRAINT cleaning_room_FK FOREIGN KEY(RoomNumber) REFERENCES Room(RoomNumber),
+CONSTRAINT cleaning_hotel_FK FOREIGN KEY(HotelID) REFERENCES Hotel(HotelID)
 );
 
 CREATE TABLE Manager(
@@ -97,12 +102,6 @@ CREATE TABLE Clerk(
 HourlyRate     varchar(8) NOT NULL,
 ClerkID          CHAR(8) NOT NULL,
 CONSTRAINT clerk_FK FOREIGN KEY(ClerkID) REFERENCES Employee(EmployeeID)
-);
-
-CREATE TABLE Housekeeper(
-HourlyRate          varchar(8) NOT NULL,
-HouseKeeperID  CHAR(8) NOT NULL,
-CONSTRAINT housekeeper_FK FOREIGN KEY(HouseKeeperID) REFERENCES Employee(EmployeeID)
 );
 
 CREATE TABLE Dependent(
