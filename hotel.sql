@@ -21,7 +21,7 @@ CONSTRAINT hotel_PK PRIMARY KEY (hotelID)
 );
 
 CREATE TABLE Customer (
-CustomerID   CHAR(8) NOT NULL,
+CustomerID   CHAR(5) NOT NULL,
 Name         varchar(20) NOT NULL,
 Street       varchar(25) NOT NULL,
 city         varchar(15) NOT NULL,
@@ -46,8 +46,8 @@ CONSTRAINT Hotel_FK FOREIGN KEY(HotelID) REFERENCES Hotel(HotelID)
 );
 
 CREATE TABLE Reservation(
-ReservationID CHAR(8)    NOT NULL,
-CustomerID    CHAR(8)    NOT NULL,
+ReservationID CHAR(5)    NOT NULL,
+CustomerID    CHAR(5)    NOT NULL,
 HotelID       CHAR(5)    NOT NULL,
 RoomNumber    varchar(3) NOT NULL,
 DateReserved  Date     NOT NULL,
@@ -60,8 +60,8 @@ CONSTRAINT res_room_FK FOREIGN KEY(RoomNumber) REFERENCES Room(RoomNumber)
 );
 
 CREATE TABLE Employee(
-employeeID CHAR(8) NOT NULL,
-hotelID CHAR(8) NOT NULL,
+employeeID CHAR(5) NOT NULL,
+hotelID CHAR(5) NOT NULL,
 Name varchar(20) NOT NULL,
 DOB DATE NOT NULL,
 street varchar(25) NOT NULL,
@@ -77,12 +77,12 @@ CONSTRAINT employee_fk
 
 CREATE TABLE Housekeeper(
 HourlyRate          varchar(8) NOT NULL,
-HouseKeeperID  CHAR(8) NOT NULL,
+HouseKeeperID  CHAR(5) NOT NULL,
 CONSTRAINT housekeeper_FK FOREIGN KEY(HouseKeeperID) REFERENCES Employee(EmployeeID)
 );
 
 CREATE TABLE Cleaning(
-HouseKeeperID     CHAR(8) NOT NULL,
+HouseKeeperID     CHAR(5) NOT NULL,
 RoomNumber         varchar(3) NOT NULL,
 HotelID	             CHAR(5) NOT NULL,
 Date	            DATE NOT NULL,
@@ -94,19 +94,19 @@ CONSTRAINT cleaning_hotel_FK FOREIGN KEY(HotelID) REFERENCES Hotel(HotelID)
 
 CREATE TABLE Manager(
 Salary	 varchar(9) NOT NULL,
-ManagerID	 CHAR(8) NOT NULL,
+ManagerID	 CHAR(5) NOT NULL,
 CONSTRAINT manager_FK FOREIGN KEY(ManagerID) REFERENCES Employee(EmployeeID)
 );
 
 CREATE TABLE Clerk(
 HourlyRate     varchar(8) NOT NULL,
-ClerkID          CHAR(8) NOT NULL,
+ClerkID          CHAR(5) NOT NULL,
 CONSTRAINT clerk_FK FOREIGN KEY(ClerkID) REFERENCES Employee(EmployeeID)
 );
 
 CREATE TABLE Dependent(
-DependentID CHAR(8) NOT NULL,
-EmployeeID CHAR(8) NOT NULL,
+DependentID CHAR(5) NOT NULL,
+EmployeeID CHAR(5) NOT NULL,
 Name varchar(20) NOT NULL,
 Relationship varchar(15) NOT NULL,
 street varchar(25) NOT NULL,
@@ -121,8 +121,8 @@ CONSTRAINT dependent_fk
 );
 
 CREATE TABLE Reward(
-RewardID     CHAR(8) NOT NULL,
-CustomerID   CHAR(8) NOT NULL,
+RewardID     CHAR(5) NOT NULL,
+CustomerID   CHAR(5) NOT NULL,
 Description     varchar(15) NOT NULL,
 PointValue      int(5) NOT NULL,
 CONSTRAINT reward_PK PRIMARY KEY(RewardID),
