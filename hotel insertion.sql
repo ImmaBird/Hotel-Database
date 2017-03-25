@@ -3,7 +3,6 @@ Insert into Hotel Values ('00001', '10 Main Street', 'Boston', 'MA', '02110', '(
                          ('00003', '73 North Avenue', 'Los Angeles', 'CA', '90013', '(310)473-9321'),
                          ('00004', '898 North Avenue', 'Salt Lake City', 'UT', '84044', '(801)432-1212'),
 
-<<<<<<< HEAD
 Insert into Customer Values
 ('00000001', 'Jonathan Vasquez', '19130 Hansons Park', 'Albuquerque', 'NM', '87180', '(505)117-9757', '3584-2890-3134-2527', '2/18', '460', 4481),
 ('00000002', 'Doris Kelley', '39 Moose Way', 'Petaluma', 'CA', '94975', '1-(707)704-2616', '3546456645569996', '11/24', 318, 2708),
@@ -56,9 +55,6 @@ Insert into Customer Values
 ('00000049', 'Shawn Jordan', '3 Oak Valley Trail', 'Dallas', 'Texas', '75310', '1-(214)128-5155', '3552473034615265', '8/19', 167, 12578),
 ('00000050', 'Adam Allen', '05 Holmberg Center', 'Des Moines', 'Iowa', '50310', '1-(515)810-8754', '3556637447271769', '6/21', 417, 7228);
 
-=======
-Insert into Customer Values ('00000001', 'Bob Smith', '155 Light Street', 'Boston', 'MA', '02110', '(617)222-2222', '1111-1111-1111-1111', '09/19', '222', 10252),
->>>>>>> ef70700db6368bf64deeff6c50959a5de80aca9c
 
 insert into Room Values  ('1', '00001', 1, 1, '1402.68'),
                          ('2', '00003', 1, 1, '1544.58'),
