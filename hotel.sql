@@ -30,7 +30,7 @@ ZipCode      varchar(8) NOT NULL,
 Telephone    varchar(13) NOT NULL,
 CCNumber     varchar(19) NOT NULL,
 CCExp	     varchar(5) NOT NULL,
-CCSecCode    varchar(4) NOT NULL,
+CCSecCode    Int(4) NOT NULL,
 RewardPoints Int(5) NOT NULL,
 CONSTRAINT customer_PK PRIMARY KEY (customerID)
 );
