@@ -36,11 +36,11 @@ CONSTRAINT customer_PK PRIMARY KEY (customerID)
 );
 
 CREATE TABLE Room(
-RoomNumber   varchar(3)   NOT NULL,
 HotelID      CHAR(5)      NOT NULL,
+RoomNumber   varchar(3)   NOT NULL,
 MaxOccupancy Int(2)       NOT NULL,
 Beds         Int(2)       NOT NULL,
-Price        DECIMAL(4,2) NOT NULL,
+Price        DECIMAL(6,2) NOT NULL,
 CONSTRAINT Room_PK PRIMARY KEY(RoomNumber, HotelID),
 CONSTRAINT Hotel_FK FOREIGN KEY(HotelID) REFERENCES Hotel(HotelID)
 );
@@ -76,8 +76,8 @@ CONSTRAINT employee_fk
 );
 
 CREATE TABLE Housekeeper(
-HourlyRate          varchar(8) NOT NULL,
 HouseKeeperID  CHAR(5) NOT NULL,
+HourlyRate          varchar(8) NOT NULL,
 CONSTRAINT housekeeper_FK FOREIGN KEY(HouseKeeperID) REFERENCES Employee(EmployeeID)
 );
 
@@ -91,14 +91,14 @@ CONSTRAINT cleaning_room_FK FOREIGN KEY(RoomNumber) REFERENCES Room(RoomNumber)
 );
 
 CREATE TABLE Manager(
-Salary	 varchar(9) NOT NULL,
 ManagerID	 CHAR(5) NOT NULL,
+Salary	 varchar(9) NOT NULL,
 CONSTRAINT manager_FK FOREIGN KEY(ManagerID) REFERENCES Employee(EmployeeID)
 );
 
 CREATE TABLE Clerk(
-HourlyRate     varchar(8) NOT NULL,
 ClerkID          CHAR(5) NOT NULL,
+HourlyRate     varchar(8) NOT NULL,
 CONSTRAINT clerk_FK FOREIGN KEY(ClerkID) REFERENCES Employee(EmployeeID)
 );
 
@@ -119,8 +119,8 @@ CONSTRAINT dependent_fk
 );
 
 CREATE TABLE Reward(
-RewardID     CHAR(5) NOT NULL,
 CustomerID   CHAR(5) NOT NULL,
+RewardID     CHAR(5) NOT NULL,
 Description     varchar(25) NOT NULL,
 PointValue      int(5) NOT NULL,
 CONSTRAINT reward_PK PRIMARY KEY(RewardID),
