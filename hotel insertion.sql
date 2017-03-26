@@ -98,7 +98,7 @@ insert into Room Values
 ('9', '00004', 2, 1, '831.54'),
 ('10', '00004', 2, 1, '1649.50');
 
-Insert into Reservation Values ('12345678', '00001', '00001', '152', 02-25-2017, 05-22-2017, 05-24-2017),
+Insert into Reservation Values ('12345678', '00001', '00001', '152', 02-25-2017, 05-22-2017, 05-24-2017);
 
 insert into Employee values
 ('00001', '00002', 'Terry Hanson', '01/19/1977', '63772 Crest Line Park', 'Indianapolis', 'IN', '46216', '(317)174-2111'),
@@ -143,143 +143,143 @@ insert into Employee values
 ('00040', '00001', 'Patrick Anderson', '06/02/1977', '55 Emmet Avenue', 'Houston', 'TX', '77080', '(832)984-5378');
 
 Insert into Housekeeper Values
- (15, '00001');
- (13, '00002');
- (10, '00003');
- (12, '00004');
- (11, '00005');
- (10, '00006');
- (15, '00007');
- (11, '00008');
- (12, '00009');
- (10, '00010');
- (13, '00011');
- (15, '00012');
- (14, '00013');
- (9, '00014');
- (14, '00015');
- (10, '00016');
- (11, '00017');
+ (15, '00001'),
+ (13, '00002'),
+ (10, '00003'),
+ (12, '00004'),
+ (11, '00005'),
+ (10, '00006'),
+ (15, '00007'),
+ (11, '00008'),
+ (12, '00009'),
+ (10, '00010'),
+ (13, '00011'),
+ (15, '00012'),
+ (14, '00013'),
+ (9, '00014'),
+ (14, '00015'),
+ (10, '00016'),
+ (11, '00017'),
  (12, '00018');
 
 Insert into Cleaning Values
- ('00001', '9', '01/24/2017');
- ('00002', '9', '11/18/2016');
- ('00003', '4', '03/07/2017');
- ('00004', '4', '11/24/2016');
- ('00005', '5', '02/28/2017');
- ('00006', '2', '12/08/2016');
- ('00007', '1', '01/18/2017');
- ('00008', '4', '12/27/2016');
- ('00009', '8', '11/02/2016');
- ('00010', '6', '11/09/2016');
- ('00011', '6', '02/24/2017');
- ('00012', '6', '02/27/2017');
- ('00013', '10', '10/09/2016');
- ('00014', '1', '11/25/2016');
- ('00015', '7', '10/28/2016');
- ('00016', '5', '01/03/2017');
- ('00017', '2', '02/14/2017');
- ('00018', '4', '10/11/2016');
- ('00001', '10', '10/10/2016');
- ('00002', '6', '02/27/2017');
- ('00003', '2', '01/26/2017');
- ('00004', '4', '02/16/2017');
- ('00005', '2', '03/04/2017');
- ('00006', '7', '03/23/2017');
- ('00007', '6', '03/20/2017');
- ('00008', '4', '10/21/2016');
- ('00009', '4', '03/02/2017');
- ('00010', '9', '01/05/2017');
- ('00011', '6', '01/19/2017');
- ('00012', '8', '11/25/2016');
- ('00013', '3', '01/19/2017');
- ('00014', '2', '12/12/2016');
- ('00015', '3', '01/03/2017');
- ('00016', '3', '02/28/2017');
- ('00017', '9', '03/15/2017');
- ('00018', '9', '11/04/2016');
- ('00001', '1', '02/01/2017');
- ('00002', '8', '11/10/2016');
- ('00003', '9', '12/27/2016');
- ('00004', '3', '03/12/2017');
- ('00005', '1', '12/06/2016');
- ('00006', '1', '11/06/2016');
- ('00007', '2', '01/02/2017');
- ('00008', '8', '12/15/2016');
- ('00009', '6', '11/22/2016');
- ('00010', '2', '12/20/2016');
- ('00011', '3', '02/18/2017');
- ('00012', '10', '03/06/2017');
- ('00013', '5', '11/13/2016');
+ ('00001', '9', '01/24/2017'),
+ ('00002', '9', '11/18/2016'),
+ ('00003', '4', '03/07/2017'),
+ ('00004', '4', '11/24/2016'),
+ ('00005', '5', '02/28/2017'),
+ ('00006', '2', '12/08/2016'),
+ ('00007', '1', '01/18/2017'),
+ ('00008', '4', '12/27/2016'),
+ ('00009', '8', '11/02/2016'),
+ ('00010', '6', '11/09/2016'),
+ ('00011', '6', '02/24/2017'),
+ ('00012', '6', '02/27/2017'),
+ ('00013', '10', '10/09/2016'),
+ ('00014', '1', '11/25/2016'),
+ ('00015', '7', '10/28/2016'),
+ ('00016', '5', '01/03/2017'),
+ ('00017', '2', '02/14/2017'),
+ ('00018', '4', '10/11/2016'),
+ ('00001', '10', '10/10/2016'),
+ ('00002', '6', '02/27/2017'),
+ ('00003', '2', '01/26/2017'),
+ ('00004', '4', '02/16/2017'),
+ ('00005', '2', '03/04/2017'),
+ ('00006', '7', '03/23/2017'),
+ ('00007', '6', '03/20/2017'),
+ ('00008', '4', '10/21/2016'),
+ ('00009', '4', '03/02/2017'),
+ ('00010', '9', '01/05/2017'),
+ ('00011', '6', '01/19/2017'),
+ ('00012', '8', '11/25/2016'),
+ ('00013', '3', '01/19/2017'),
+ ('00014', '2', '12/12/2016'),
+ ('00015', '3', '01/03/2017'),
+ ('00016', '3', '02/28/2017'),
+ ('00017', '9', '03/15/2017'),
+ ('00018', '9', '11/04/2016'),
+ ('00001', '1', '02/01/2017'),
+ ('00002', '8', '11/10/2016'),
+ ('00003', '9', '12/27/2016'),
+ ('00004', '3', '03/12/2017'),
+ ('00005', '1', '12/06/2016'),
+ ('00006', '1', '11/06/2016'),
+ ('00007', '2', '01/02/2017'),
+ ('00008', '8', '12/15/2016'),
+ ('00009', '6', '11/22/2016'),
+ ('00010', '2', '12/20/2016'),
+ ('00011', '3', '02/18/2017'),
+ ('00012', '10', '03/06/2017'),
+ ('00013', '5', '11/13/2016'),
  ('00014', '4', '11/30/2016');
 
 Insert into Manager Values
- (40000, '00033');
- (50000, '00034');
- (60000, '00035');
- (60000, '00036');
- (70000, '00037');
- (40000, '00038');
- (30000, '00039');
+ (40000, '00033'),
+ (50000, '00034'),
+ (60000, '00035'),
+ (60000, '00036'),
+ (70000, '00037'),
+ (40000, '00038'),
+ (30000, '00039'),
  (70000, '00040');
 
 Insert into Clerk Values
- (12, '00019');
- (13, '00020');
- (14, '00021');
- (17, '00022');
- (16, '00023');
- (15, '00024');
- (13, '00025');
- (20, '00026');
- (12, '00027');
- (18, '00028');
- (17, '00029');
- (16, '00030');
- (13, '00031');
+ (12, '00019'),
+ (13, '00020'),
+ (14, '00021'),
+ (17, '00022'),
+ (16, '00023'),
+ (15, '00024'),
+ (13, '00025'),
+ (20, '00026'),
+ (12, '00027'),
+ (18, '00028'),
+ (17, '00029'),
+ (16, '00030'),
+ (13, '00031'),
  (14, '00032');
 
 insert into Dependent values
- ('00001', 'DependentID', 'Julia Mills', 'Friend', '4128 Sloan Avenue', 'Bellevue', 'WA', '98008', '1-(206)401-5152');
- ('00002', 'DependentID', 'Roger James', 'Brother', '977 Pierstorff Street', 'Houston', 'TX', '77255', '1-(713)121-7544');
- ('00003', 'DependentID', 'Betty Cook', 'Sister', '11 Saint Paul Circle', 'Worcester', 'MA', '01654', '1-(508)846-4582');
- ('00004', 'DependentID', 'Todd Stone', 'Father', '44709 Heffernan Drive', 'Omaha', 'NE', '68110', '1-(402)945-5540');
- ('00005', 'DependentID', 'Patrick Berry', 'Friend', '5 Jenna Hill', 'Lafayette', 'LA', '70505', '1-(337)179-0083');
- ('00006', 'DependentID', 'Jason Collins', 'Son', '31 Waubesa Terrace', 'Springfield', 'IL', '62723', '1-(217)411-5462');
- ('00007', 'DependentID', 'Margaret Cox', 'Brother-In-Law', '0 Schlimgen Plaza', 'Stockton', 'CA', '95210', '1-(209)462-7776');
- ('00008', 'DependentID', 'Sara Jones', 'Cousin', '1 Ramsey Junction', 'Pensacola', 'FL', '32526', '1-(850)804-3114');
- ('00009', 'DependentID', 'Samuel Williams', 'Son', '48 Welch Hill', 'Saint Louis', 'MO', '63143', '1-(314)493-6867');
- ('00010', 'DependentID', 'Sandra Stephens', 'Daughter', '54988 5th Parkway', 'Morgantown', 'WV', '26505', '1-(304)480-1202');
- ('00011', 'DependentID', 'Sara Ramos', 'Friend', '22 Toban Junction', 'Southfield', 'MI', '48076', '1-(810)532-4022');
- ('00012', 'DependentID', 'Roger Taylor', 'Father', '07920 Erie Place', 'Colorado Springs', 'CO', '80951', '1-(719)729-6998');
- ('00013', 'DependentID', 'Annie Mitchell', 'Sister-In-Law', '63 Lukken Terrace', 'Honolulu', 'HI', '96840', '1-(808)407-6888');
- ('00014', 'DependentID', 'Carlos Kennedy', 'Brother', '6 Tennyson Trail', 'Roanoke', 'VA', '24048', '1-(540)441-1213');
- ('00015', 'DependentID', 'Jesse Ray', 'Friend', '1807 Pine View Park', 'Washington', 'DC', '20546', '1-(202)415-7634');
- ('00016', 'DependentID', 'Carl Burton', 'Father', '98687 Raven Terrace', 'Phoenix', 'AZ', '85040', '1-(602)987-1200');
- ('00017', 'DependentID', 'Tina Olson', 'Sister', '83462 American Ash Alley', 'Raleigh', 'NC', '27635', '1-(919)193-5122');
- ('00018', 'DependentID', 'Charles Morgan', 'Cousin', '6258 Parkside Alley', 'Providence', 'RI', '02912', '1-(401)832-0704');
- ('00019', 'DependentID', 'Judy Hart', 'Daughter', '22 Dryden Street', 'San Jose', 'CA', '95150', '1-(408)948-5818');
- ('00020', 'DependentID', 'Anna Jones', 'Wife', '87 Walton Street', 'Richmond', 'VA', '23228', '1-(804)604-1879');
- ('00021', 'DependentID', 'Judith King', 'Wife', '75508 Portage Street', 'Cincinnati', 'OH', '45223', '1-(513)587-5750');
- ('00022', 'DependentID', 'Willie Montgomery', 'Husband', '47099 Oakridge Circle', 'Garland', 'TX', '75044', '1-(972)656-7189');
- ('00023', 'DependentID', 'Denise Butler', 'Sister', '42 Arizona Drive', 'Arlington', 'TX', '76004', '1-(817)104-1531');
- ('00024', 'DependentID', 'Carolyn Hart', 'Sister', '6406 Pleasure Hill', 'Oklahoma City', 'OK', '73157', '1-(405)980-6649');
- ('00025', 'DependentID', 'Henry Gutierrez', 'Husband', '60 Algoma Junction', 'Gilbert', 'AZ', '85297', '1-(602)688-3773');
- ('00026', 'DependentID', 'Patricia Harris', 'Friend', '389 Pepper Wood Plaza', 'Miami', 'FL', '33245', '1-(786)798-7469');
- ('00027', 'DependentID', 'Anthony Allen', 'Friend', '26 Stephen Park', 'Pasadena', 'CA', '91131', '1-(626)699-5859');
- ('00028', 'DependentID', 'Brenda Harrison', 'Sister-In-Law', '7412 Kim Trail', 'Salem', 'OR', '97312', '1-(971)887-8784');
- ('00029', 'DependentID', 'Larry Davis', 'Father', '6214 Pleasure Drive', 'Lubbock', 'TX', '79491', '1-(806)651-8869');
- ('00030', 'DependentID', 'Eric Rice', 'Friend', '78100 Golf Course Plaza', 'Austin', 'TX', '78769', '1-(512)860-8361');
- ('00031', 'DependentID', 'Norma Price', 'Cousin', '119 Hazelcrest Pass', 'Houston', 'TX', '77050', '1-(281)957-6051');
- ('00032', 'DependentID', 'Christina Henry', 'Sister', '85464 Schmedeman Drive', 'Cincinnati', 'OH', '45213', '1-(513)103-9257');
- ('00033', 'DependentID', 'Willie Howell', 'Brother', '956 Center Road', 'Detroit', 'MI', '48206', '1-(313)864-2300');
- ('00034', 'DependentID', 'Maria Brown', 'Friend', '8 3rd Parkway', 'Dallas', 'TX', '75323', '1-(214)423-0269');
- ('00035', 'DependentID', 'Eugene Washington', 'Father', '60776 Montana Hill', 'Sarasota', 'FL', '34276', '1-(941)439-5017');
- ('00036', 'DependentID', 'Laura Pierce', 'Mother', '27151 Longview Avenue', 'High Point', 'NC', '27264', '1-(336)183-5070');
- ('00037', 'DependentID', 'Gregory Perry', 'Brother', '1512 Green Ridge Terrace', 'Washington', 'DC', '20231', '1-(202)680-2346');
- ('00038', 'DependentID', 'Tina Hamilton', 'Sister-In-Law', '958 Spaight Pass', 'Dallas', 'TX', '75310', '1-(214)146-7526');
- ('00039', 'DependentID', 'Nicole Moreno', 'Sister', '3098 Twin Pines Way', 'Newport News', 'VA', '23605', '1-(757)731-9004');
+ ('00001', 'DependentID', 'Julia Mills', 'Friend', '4128 Sloan Avenue', 'Bellevue', 'WA', '98008', '1-(206)401-5152'),
+ ('00002', 'DependentID', 'Roger James', 'Brother', '977 Pierstorff Street', 'Houston', 'TX', '77255', '1-(713)121-7544'),
+ ('00003', 'DependentID', 'Betty Cook', 'Sister', '11 Saint Paul Circle', 'Worcester', 'MA', '01654', '1-(508)846-4582'),
+ ('00004', 'DependentID', 'Todd Stone', 'Father', '44709 Heffernan Drive', 'Omaha', 'NE', '68110', '1-(402)945-5540'),
+ ('00005', 'DependentID', 'Patrick Berry', 'Friend', '5 Jenna Hill', 'Lafayette', 'LA', '70505', '1-(337)179-0083'),
+ ('00006', 'DependentID', 'Jason Collins', 'Son', '31 Waubesa Terrace', 'Springfield', 'IL', '62723', '1-(217)411-5462'),
+ ('00007', 'DependentID', 'Margaret Cox', 'Brother-In-Law', '0 Schlimgen Plaza', 'Stockton', 'CA', '95210', '1-(209)462-7776'),
+ ('00008', 'DependentID', 'Sara Jones', 'Cousin', '1 Ramsey Junction', 'Pensacola', 'FL', '32526', '1-(850)804-3114'),
+ ('00009', 'DependentID', 'Samuel Williams', 'Son', '48 Welch Hill', 'Saint Louis', 'MO', '63143', '1-(314)493-6867'),
+ ('00010', 'DependentID', 'Sandra Stephens', 'Daughter', '54988 5th Parkway', 'Morgantown', 'WV', '26505', '1-(304)480-1202'),
+ ('00011', 'DependentID', 'Sara Ramos', 'Friend', '22 Toban Junction', 'Southfield', 'MI', '48076', '1-(810)532-4022'),
+ ('00012', 'DependentID', 'Roger Taylor', 'Father', '07920 Erie Place', 'Colorado Springs', 'CO', '80951', '1-(719)729-6998'),
+ ('00013', 'DependentID', 'Annie Mitchell', 'Sister-In-Law', '63 Lukken Terrace', 'Honolulu', 'HI', '96840', '1-(808)407-6888'),
+ ('00014', 'DependentID', 'Carlos Kennedy', 'Brother', '6 Tennyson Trail', 'Roanoke', 'VA', '24048', '1-(540)441-1213'),
+ ('00015', 'DependentID', 'Jesse Ray', 'Friend', '1807 Pine View Park', 'Washington', 'DC', '20546', '1-(202)415-7634'),
+ ('00016', 'DependentID', 'Carl Burton', 'Father', '98687 Raven Terrace', 'Phoenix', 'AZ', '85040', '1-(602)987-1200'),
+ ('00017', 'DependentID', 'Tina Olson', 'Sister', '83462 American Ash Alley', 'Raleigh', 'NC', '27635', '1-(919)193-5122'),
+ ('00018', 'DependentID', 'Charles Morgan', 'Cousin', '6258 Parkside Alley', 'Providence', 'RI', '02912', '1-(401)832-0704'),
+ ('00019', 'DependentID', 'Judy Hart', 'Daughter', '22 Dryden Street', 'San Jose', 'CA', '95150', '1-(408)948-5818'),
+ ('00020', 'DependentID', 'Anna Jones', 'Wife', '87 Walton Street', 'Richmond', 'VA', '23228', '1-(804)604-1879'),
+ ('00021', 'DependentID', 'Judith King', 'Wife', '75508 Portage Street', 'Cincinnati', 'OH', '45223', '1-(513)587-5750'),
+ ('00022', 'DependentID', 'Willie Montgomery', 'Husband', '47099 Oakridge Circle', 'Garland', 'TX', '75044', '1-(972)656-7189'),
+ ('00023', 'DependentID', 'Denise Butler', 'Sister', '42 Arizona Drive', 'Arlington', 'TX', '76004', '1-(817)104-1531'),
+ ('00024', 'DependentID', 'Carolyn Hart', 'Sister', '6406 Pleasure Hill', 'Oklahoma City', 'OK', '73157', '1-(405)980-6649'),
+ ('00025', 'DependentID', 'Henry Gutierrez', 'Husband', '60 Algoma Junction', 'Gilbert', 'AZ', '85297', '1-(602)688-3773'),
+ ('00026', 'DependentID', 'Patricia Harris', 'Friend', '389 Pepper Wood Plaza', 'Miami', 'FL', '33245', '1-(786)798-7469'),
+ ('00027', 'DependentID', 'Anthony Allen', 'Friend', '26 Stephen Park', 'Pasadena', 'CA', '91131', '1-(626)699-5859'),
+ ('00028', 'DependentID', 'Brenda Harrison', 'Sister-In-Law', '7412 Kim Trail', 'Salem', 'OR', '97312', '1-(971)887-8784'),
+ ('00029', 'DependentID', 'Larry Davis', 'Father', '6214 Pleasure Drive', 'Lubbock', 'TX', '79491', '1-(806)651-8869'),
+ ('00030', 'DependentID', 'Eric Rice', 'Friend', '78100 Golf Course Plaza', 'Austin', 'TX', '78769', '1-(512)860-8361'),
+ ('00031', 'DependentID', 'Norma Price', 'Cousin', '119 Hazelcrest Pass', 'Houston', 'TX', '77050', '1-(281)957-6051'),
+ ('00032', 'DependentID', 'Christina Henry', 'Sister', '85464 Schmedeman Drive', 'Cincinnati', 'OH', '45213', '1-(513)103-9257'),
+ ('00033', 'DependentID', 'Willie Howell', 'Brother', '956 Center Road', 'Detroit', 'MI', '48206', '1-(313)864-2300'),
+ ('00034', 'DependentID', 'Maria Brown', 'Friend', '8 3rd Parkway', 'Dallas', 'TX', '75323', '1-(214)423-0269'),
+ ('00035', 'DependentID', 'Eugene Washington', 'Father', '60776 Montana Hill', 'Sarasota', 'FL', '34276', '1-(941)439-5017'),
+ ('00036', 'DependentID', 'Laura Pierce', 'Mother', '27151 Longview Avenue', 'High Point', 'NC', '27264', '1-(336)183-5070'),
+ ('00037', 'DependentID', 'Gregory Perry', 'Brother', '1512 Green Ridge Terrace', 'Washington', 'DC', '20231', '1-(202)680-2346'),
+ ('00038', 'DependentID', 'Tina Hamilton', 'Sister-In-Law', '958 Spaight Pass', 'Dallas', 'TX', '75310', '1-(214)146-7526'),
+ ('00039', 'DependentID', 'Nicole Moreno', 'Sister', '3098 Twin Pines Way', 'Newport News', 'VA', '23605', '1-(757)731-9004'),
  ('00040', 'DependentID', 'Phillip Brown', 'Brother-In-Law', '355 Lake View Plaza', 'Warren', 'MI', '48092', '1-(586)535-6223');
 
 insert into Reward values
