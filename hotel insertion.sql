@@ -1,3 +1,15 @@
+delete if exists Reward;
+delete if exists Dependent;
+delete if exists Cleaning;
+delete if exists Housekeeper;
+delete if exists Clerk;
+delete if exists Manager;
+delete if exists Employee;
+delete if exists Reservation;
+delete if exists Room;
+delete if exists Customer;
+delete if exists Hotel;
+
 Insert into Hotel Values
 ('00001', '10 Main Street', 'Boston', 'MA', '02110', '(617)111-1111'),
 ('00002', '5 Graph Street', 'Austin', 'TX', '73301', '(512)253-7382'),
