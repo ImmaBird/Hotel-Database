@@ -41,7 +41,7 @@ HotelID      CHAR(5)      NOT NULL,
 MaxOccupancy Int(2)       NOT NULL,
 Beds         Int(2)       NOT NULL,
 Price        DECIMAL(4,2) NOT NULL,
-CONSTRAINT Room_PK PRIMARY KEY(RoomNumber),
+CONSTRAINT Room_PK PRIMARY KEY(RoomNumber, HotelID),
 CONSTRAINT Hotel_FK FOREIGN KEY(HotelID) REFERENCES Hotel(HotelID)
 );
 
@@ -87,7 +87,7 @@ RoomNumber         varchar(3) NOT NULL,
 Date	            DATE NOT NULL,
 CONSTRAINT cleaning_PK PRIMARY KEY(HouseKeeperID, RoomNumber, Date),
 CONSTRAINT cleaning_house_FK FOREIGN KEY(HouseKeeperID) REFERENCES Housekeeper(HouseKeeperID),
-CONSTRAINT cleaning_room_FK FOREIGN KEY(RoomNumber) REFERENCES Room(RoomNumber),
+CONSTRAINT cleaning_room_FK FOREIGN KEY(RoomNumber) REFERENCES Room(RoomNumber)
 );
 
 CREATE TABLE Manager(
