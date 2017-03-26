@@ -84,12 +84,10 @@ CONSTRAINT housekeeper_FK FOREIGN KEY(HouseKeeperID) REFERENCES Employee(Employe
 CREATE TABLE Cleaning(
 HouseKeeperID     CHAR(5) NOT NULL,
 RoomNumber         varchar(3) NOT NULL,
-HotelID	             CHAR(5) NOT NULL,
 Date	            DATE NOT NULL,
-CONSTRAINT cleaning_PK PRIMARY KEY(HouseKeeperID, RoomNumber, HotelID, Date),
+CONSTRAINT cleaning_PK PRIMARY KEY(HouseKeeperID, RoomNumber, Date),
 CONSTRAINT cleaning_house_FK FOREIGN KEY(HouseKeeperID) REFERENCES Housekeeper(HouseKeeperID),
 CONSTRAINT cleaning_room_FK FOREIGN KEY(RoomNumber) REFERENCES Room(RoomNumber),
-CONSTRAINT cleaning_hotel_FK FOREIGN KEY(HotelID) REFERENCES Hotel(HotelID)
 );
 
 CREATE TABLE Manager(
