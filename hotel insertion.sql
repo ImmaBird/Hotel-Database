@@ -117,11 +117,7 @@ insert into Employee values
 ('00002', '00003', 'Bobby Moreno', '1981-01-24', '032 Farragut Crossing', 'Portland', 'OR', '97255', '(971)466-6584'),
 ('00003', '00004', 'Timothy Reynolds', '1950-07-13', '9 Truax Center', 'Alhambra', 'CA', '91841', '(626)998-0431'),
 ('00004', '00001', 'Willie Stone', '1981-02-05', '001 Claremont Lane', 'Brooklyn', 'NY', '11254', '(212)896-3999'),
-<<<<<<< HEAD
 ('00005', '00002', 'Howard Wagner', '1956-05-23', '49600 Mitchell Avenue', 'Temple', 'TX', '76505', '(254)981-9544'),
-=======
-('00005', '00002', 'Howard Wagner', '1965-05-23', '49600 Mitchell Avenue', 'Temple', 'TX', '76505', '(254)981-9544'),
->>>>>>> fe5a400bd0daa53d0fee024544c2a6b78719caa6
 ('00006', '00003', 'Robert Mitchell', '1977-12-03', '92605 Longview Alley', 'Fairbanks', 'AK', '99790', '(907)133-1123'),
 ('00007', '00004', 'Anthony Weaver', '1959-12-20', '2925 Moland Point', 'Augusta', 'GA', '30919', '(706)662-0560'),
 ('00008', '00001', 'Rebecca Watkins', '1987-05-23', '1680 Mcguire Plaza', 'Raleigh', 'NC', '27658', '(919)149-9060'),
@@ -142,15 +138,9 @@ insert into Employee values
 ('00023', '00004', 'Virginia Cook', '1954-12-04', '026 Ludington Point', 'Jackson', 'MS', '39210', '(601)987-8339'),
 ('00024', '00001', 'Johnny Freeman', '1985-06-16', '9208 Moland Crossing', 'Athens', 'GA', '30610', '(706)408-5414'),
 ('00025', '00002', 'Louise Gutierrez', '1978-08-27', '9 Mayer Circle', 'New York City', 'NY', '10131', '(212)688-4250'),
-<<<<<<< HEAD
 ('00026', '00003', 'Earl Carr', '1966-03-17', '8900 Walton Place', 'Columbia', 'SC', '29215', '(803)363-4673'),
 ('00027', '00004', 'Tina Foster', '1982-05-25', '9 Namekagon Center', 'Seattle', 'WA', '98148', '(206)284-9769'),
 ('00028', '00001', 'Michael Kennedy', '1982-02-17', '7777 Becker Point', 'Ocala', 'FL', '34479', '(352)505-1102'),
-=======
-('00026', '00003', 'Earl Carr', '1968-03-17', '8900 Walton Place', 'Columbia', 'SC', '29215', '(803)363-4673'),
-('00027', '00004', 'Tina Foster', '1982-05-25', '9 Namekagon Center', 'Seattle', 'WA', '98148', '(206)284-9769'),
-('00028', '00001', 'Michael Kennedy', '1984-02-17', '7777 Becker Point', 'Ocala', 'FL', '34479', '(352)505-1102'),
->>>>>>> fe5a400bd0daa53d0fee024544c2a6b78719caa6
 ('00029', '00002', 'Martha Davis', '1966-02-19', '698 Lukken Place', 'Saint Paul', 'MN', '55166', '(651)634-3539'),
 ('00030', '00003', 'Jane Hernandez', '1980-08-05', '4419 Havey Court', 'Brockton', 'MA', '02305', '(508)544-6828'),
 ('00031', '00004', 'James Cook', '1964-08-14', '0 Hovde Pass', 'Las Vegas', 'NV', '89166', '(702)176-4537'),
