@@ -121,7 +121,7 @@ CONSTRAINT dependent_fk
 CREATE TABLE Reward(
 RewardID     CHAR(5) NOT NULL,
 CustomerID   CHAR(5) NOT NULL,
-Description     varchar(15) NOT NULL,
+Description     varchar(25) NOT NULL,
 PointValue      int(5) NOT NULL,
 CONSTRAINT reward_PK PRIMARY KEY(RewardID),
 CONSTRAINT reward_FK FOREIGN KEY(CustomerID) REFERENCES Customer(CustomerID)
