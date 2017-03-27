@@ -1,14 +1,14 @@
-delete if exists Reward;
-delete if exists Dependent;
-delete if exists Cleaning;
-delete if exists Housekeeper;
-delete if exists Clerk;
-delete if exists Manager;
-delete if exists Employee;
-delete if exists Reservation;
-delete if exists Room;
-delete if exists Customer;
-delete if exists Hotel;
+drop if exists Reward;
+drop if exists Depend;
+drop if exists Cleaning;
+drop if exists Housekeeper;
+drop if exists Clerk;
+drop if exists Manager; 
+drop if exists Employee;
+drop if exists Reservation;
+drop if exists Room;
+drop if exists Customer;
+drop if exists Hotel;
 
 Insert into Hotel Values
 ('00001', '10 Main Street', 'Boston', 'MA', '02110', '(617)111-1111'),
